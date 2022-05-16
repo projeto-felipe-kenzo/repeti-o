@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var A = Number(prompt('Digite a população da cidade A'))
+        var B = Number(prompt('Digite a população da cidade B'))
+        var anos = 0
+        var taxaA = Number(prompt('Digite a taxa de crescimento da cidade A'))
+        var taxaB = Number(prompt('Digite a taxa de crescimento da cidade B'))
+
+     do{
+        while (A <= B){
+            A = A * taxaA
+            B = B * taxaB
+            anos++
+        }
+     }   while()
+        
+
+        console.log('População de A==>', A)
+        console.log('População de B ==>', B)
+        console.log('Quantidade de anos ==>',anos)
+    </script>
+</body>
+</html>
