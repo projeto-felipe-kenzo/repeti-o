@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calcular a Idade</title>
+</head>
+<body>
+
+    <script>
+        //ate 10 bebe
+        //ate 20 adolescente
+        //acima de 20 adulto
+        var ano = Number(prompt('Digite o ano em que você nasceu'))
+        var sexo = window.prompt('Você é do sexo feminino ou masculino?')
+        var calculo = 2022 - ano
+        var img = document.createElement('img');
+      
+        
+        if (calculo<=10){
+           document.write('O sistema prevê que você tem', calculo , 'anos e é do sexo' , sexo)
+    
+           if (sexo = feminino){
+            img.src = 'babygirl.jpg'
+           }
+          
+           else if (sexo = masculino){
+            img.src = 'babyboy.jpg'
+           }
+          
+           else {
+            window.alert('Por favor, digite um sexo válido.')
+           }
+        }
+
+        else if (calculo<=20) {
+          document.write('O sistema prevê que você tem', calculo , 'anos e é do sexo' , sexo)
+          
+        }
+
+        else if (calculo>20){
+          document.write('O sistema prevê que você tem', calculo , 'anos e é do sexo' , sexo)
+          
+        }
+
+        else {
+            window.alert('Por favor, digite o ano em que você nasceu.')
+        }
+        
+    </script>
+</body>
+</html>
